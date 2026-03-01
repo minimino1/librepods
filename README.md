@@ -64,7 +64,11 @@ https://github.com/user-attachments/assets/43911243-0576-4093-8c55-89c1db5ea533
 
 #### Root Requirement
 
-If you are using ColorOS/OxygenOS 16, you don't need root except for customizing transparency mode, setting up hearing aid, and use Bluetooth Multipoint. Changing ANC, conversational awareness, ear detection, and other customizations will work without root. For everyone else:
+If you are using ColorOS/OxygenOS 16, you don't need root except for customizing transparency mode, setting up hearing aid, and use Bluetooth Multipoint. Changing ANC, conversational awareness, ear detection, and other customizations will work without root.
+
+Nothing Phone 3 (NothingOS 3.0) users with a rooted device and Xposed should follow the standard setup. The Magisk patching module now supports Qualcomm QTI Bluetooth libraries used on Nothing Phone 3.
+
+For everyone else:
 
 > [!CAUTION]
 > **You must have a rooted device with Xposed to use LibrePods on Android.** This is due to a [bug in the Android Bluetooth stack](https://issuetracker.google.com/issues/371713238). Please upvote the issue by clicking the '+1' icon on the IssueTracker page. DO NOT leave a +1 comment - use the +1 button in the top right of the page next to the "Hotlists" field.  Leaving +1 comment spam makes it impossible for developers to engage in the necessary technical discussion to implement this fix, and will disincentivize the responsible Google developers from engaging.  I don't know a fix for Android versions <13 either. So, this needs a phone running A13+.

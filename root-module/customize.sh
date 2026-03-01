@@ -84,6 +84,7 @@ else
 fi
 
 for lib_path in \
+    "/apex/com.android.bt/lib64/libbluetooth_jni.so" \
     "/apex/com.android.btservices/lib64/libbluetooth_jni.so" \
     "/system/lib64/libbluetooth_jni.so" \
     "/system/lib64/libbluetooth_qti.so" \
@@ -101,8 +102,7 @@ done
 }
 
 if echo "$LIBRARY_NAME" | grep -q "qti"; then
-  ui_print "ERROR: \"qti\" Bluetooth libraries are NOT supported by the patcher and you won't be able to use aln. Aborting..."
-  abort "Bluetooth driver not compatible."
+  ui_print "Warning: QTI Bluetooth library detected ($LIBRARY_NAME). Attempting to patch..."
 fi
 
 ui_print "Calculating patch addresses for $SOURCE_FILE..."
